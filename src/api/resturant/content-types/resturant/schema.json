@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resturants",
+  "info": {
+    "singularName": "resturant",
+    "pluralName": "resturants",
+    "displayName": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "resturants"
+    }
+  }
+}
