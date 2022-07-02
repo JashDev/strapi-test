@@ -13,7 +13,7 @@ module.exports = ({ env }) => ({
       port: env("DATABASE_PORT", "3306"),
       user: env("DATABASE_USER", "root"),
       password: env("DATABASE_PASSWORD", "n89RvRYAkS5n"),
-      database: env("DATABASE_NAME", "strapi-dev"),
+      database: env("DATABASE_NAME", "strapi-test"),
     },
     useNullAsDefault: true,
     debug: true,
