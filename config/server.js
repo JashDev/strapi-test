@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
   port: env.int("PORT", 3000),
   app: {
     keys: env.array("APP_KEYS"),
-    URL: "/test/strapi/admin",
+    Proxy: true,
   },
   admin: {
     url: "/test/strapi/admin",
