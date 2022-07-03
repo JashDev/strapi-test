@@ -4,6 +4,6 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  url: "https://galaxiaweb.app/strapi-api",
+  url: env("SERVER_URL", ""),
   proxy: true,
 });

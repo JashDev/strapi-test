@@ -5,5 +5,5 @@ module.exports = ({ env }) => ({
   apiToken: {
     salt: env("API_TOKEN_SALT"),
   },
-  url: "/strapi/dashboard",
+  url: env("SERVER_ADMIN", ""),
 });
